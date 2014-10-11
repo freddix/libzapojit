@@ -1,7 +1,7 @@
 Summary:	GLib/GObject wrapper for the SkyDrive and Hotmail REST APIs
 Name:		libzapojit
 Version:	0.0.3
-Release:	3
+Release:	4
 License:	LGPL v2.1
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/libzapojit/0.0/%{name}-%{version}.tar.xz
@@ -69,6 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 %{__rm} -r $RPM_BUILD_ROOT%{_docdir}/libzapojit
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
